@@ -12,7 +12,7 @@ int main() {
 		the_game.draw();
 		the_game.next_generation();
 
-		cout << "Again (1/0): ";
+		cout <<"\n"<< "Again (1/0): ";
 		cin >> again;
 	} while (again);
 

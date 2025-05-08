@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string>
 #include <ctime>
+#include <windows.h>
 
 bool game_of_life::random_value()
 {
@@ -107,8 +108,10 @@ void game_of_life::next_generation()
 
 void game_of_life::draw()
 {
+	system("cls");//I added for clearing the grid
 	for (int row = 0; row < ROWS; row++)
 	{
+
 
 		for (int col = 0; col < COLS; col++)
 		{
@@ -127,8 +130,8 @@ void game_of_life::draw()
 		cout << endl;
 
 
-
-
+		
 	}
+	Sleep(500);//added delay
 
 }
