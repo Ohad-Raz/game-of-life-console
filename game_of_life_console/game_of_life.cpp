@@ -108,7 +108,10 @@ void game_of_life::next_generation()
 
 void game_of_life::draw()
 {
+	Sleep(450);//added delay
+
 	system("cls");//I added for clearing the grid
+
 	for (int row = 0; row < ROWS; row++)
 	{
 
@@ -132,6 +135,5 @@ void game_of_life::draw()
 
 		
 	}
-	Sleep(500);//added delay
 
 }

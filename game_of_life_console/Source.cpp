@@ -2,6 +2,8 @@
 #include <string>
 #include <fstream>
 #include "game_of_life.h"
+#include <windows.h>
+
 using namespace std;
 
 int main() {
@@ -10,9 +12,11 @@ int main() {
 	bool again;
 	do {
 		the_game.draw();
+
 		the_game.next_generation();
 
 		cout <<"\n"<< "Again (1/0): ";
+
 		cin >> again;
 	} while (again);
 
