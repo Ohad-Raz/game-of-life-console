@@ -8,6 +8,7 @@ using namespace std;
 
 class game_of_life {
 private:
+
 	static const unsigned int COLS = 40;
 	static const unsigned int ROWS = 20;
 	bool _generation[ROWS][COLS];
